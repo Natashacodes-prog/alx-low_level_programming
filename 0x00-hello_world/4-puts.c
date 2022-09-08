@@ -2,8 +2,8 @@
 
 /**
  *
- *  * main - prints the phrase "Programming is like building a multilingual puzle
- *     * Return: 0(Success)
+ *  * main - prints the phrase "Programming is like building a multilingual puzzle * 
+ *Return: 0(Success)
  *    */
 
 int main(void)
