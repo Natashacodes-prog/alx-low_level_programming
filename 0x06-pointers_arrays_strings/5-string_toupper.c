@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * rev_string - Reverses a string.
- * @s: string to be reserved.
+ * string_toupper - Changes all lowercase letters
+ *                  of a string to uppercase.
+ * @str: The string to be changed.
+ *
+ * Return: A pointer to the changed string.
  */
-void rev_string(char *s)
+char *string_toupper(char *str)
 {
-	int i = 0, len = 0;
-	char tmp;
+	int index = 0;
 
-	while (s[i++])
-		len++;
-
-	for (i = len - 1; i >= len / 2; i--)
+	while (str[index])
 	{
-		tmp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = tmp;
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
+
+		index++;
 	}
+
+	return (str);
 }
